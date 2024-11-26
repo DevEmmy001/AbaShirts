@@ -1,5 +1,5 @@
 import React from "react";
-import { Search, User, ShoppingBag } from "lucide-react";
+import { Search, User, ShoppingCart } from "lucide-react";
 import darklogo from "./site-identity/darklogo.png";
 const NavbarDesktop = () => {
   return (
@@ -49,7 +49,7 @@ const NavbarDesktop = () => {
         </a>
         {/* Cart Icon */}
         <a href="/cart" className="text-black hover:text-gray-600">
-          <ShoppingBag size={20} />
+          <ShoppingCart size={20} />
         </a>
       </div>
     </nav>

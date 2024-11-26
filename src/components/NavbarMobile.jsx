@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Menu, Search, User, ShoppingBag } from "lucide-react";
+import { Menu, Search, User, ShoppingCart } from "lucide-react";
 import darklogo from "./site-identity/darklogo.png";
 const NavbarMobile = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -35,7 +35,7 @@ const NavbarMobile = () => {
             <User size={20} />
           </a>
           <a href="/cart" className="text-black hover:text-gray-600">
-            <ShoppingBag size={20} />
+            <ShoppingCart size={20} />
           </a>
         </div>
       </div>

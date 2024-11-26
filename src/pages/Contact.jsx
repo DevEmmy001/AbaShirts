@@ -1,12 +1,12 @@
 import React from "react";
 import Navbar from "../components/Navbarwrapper";
-const CartPage = () => {
+const Contact = () => {
   return (
     <>
       <Navbar />
-      <h1>Cartpage</h1>
+      <h1>Contact page</h1>
     </>
   );
 };
 
-export default CartPage;
+export default Contact;
