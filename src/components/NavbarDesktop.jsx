@@ -17,7 +17,7 @@ const NavbarDesktop = () => {
       </div>
 
       {/* Navigation Links */}
-      <ul className="hidden md:flex items-center gap-6 text-black font-medium">
+      <ul className="hidden md:flex items-center gap-6 text-black font-normal">
         <li>
           <a href="/products" className="hover:text-gray-600 text-sm">
             Products
