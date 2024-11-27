@@ -1,5 +1,5 @@
 import React from "react";
-import { Search, User, ShoppingCart } from "lucide-react";
+import { Search, UserCircle2Icon, ShoppingCart } from "lucide-react";
 import darklogo from "./site-identity/darklogo.png";
 const NavbarDesktop = () => {
   return (
@@ -34,18 +34,18 @@ const NavbarDesktop = () => {
       <div className="flex items-center gap-4">
         {/* Search Bar */}
         <div className="flex items-center border border-gray-300 rounded-md overflow-hidden shadow-sm">
+          <input
+            type="text"
+            placeholder="Search Product"
+            className="px-2 py-1 w-full focus:outline-none text-black text-sm"
+          />
           <button className="px-3">
             <Search size={18} />
           </button>
-          <input
-            type="text"
-            placeholder="Search"
-            className="px-2 py-1 w-full focus:outline-none text-black text-sm"
-          />
         </div>
         {/* User Icon */}
         <a href="/login" className="text-black hover:text-gray-600">
-          <User size={20} />
+          <UserCircle2Icon size={20} />
         </a>
         {/* Cart Icon */}
         <a href="/cart" className="text-black hover:text-gray-600">
