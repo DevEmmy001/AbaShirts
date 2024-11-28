@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Menu, Search, UserCircle2Icon, ShoppingCart } from "lucide-react";
+import { AlignLeft, Search, UserCircle2Icon, ShoppingCart } from "lucide-react";
 import darklogo from "./site-identity/darklogo.png";
 
 const NavbarMobile = () => {
@@ -17,7 +17,7 @@ const NavbarMobile = () => {
           aria-label="Toggle menu"
           aria-expanded={menuOpen}
         >
-          <Menu size={24} />
+          <AlignLeft size={24} />
         </button>
 
         {/* Logo */}
@@ -74,7 +74,7 @@ const NavbarMobile = () => {
           <li className="py-2 ">
             <a
               href="/products"
-              className="block px-4 text-black py-2 bg-white hover:bg-gray-100 text-sm"
+              className="block rounded-md px-4 text-black py-4 bg-white hover:bg-gray-100 text-sm"
             >
               Products
             </a>
@@ -82,7 +82,7 @@ const NavbarMobile = () => {
           <li className="py-2">
             <a
               href="/contact"
-              className="block px-4 text-black py-2 bg-white hover:bg-gray-100 text-sm"
+              className="block rounded-md px-4 text-black py-4 bg-white hover:bg-gray-100 text-sm"
             >
               Contact Us
             </a>
