@@ -5,6 +5,7 @@ import darklogo from "./site-identity/darklogo.png";
 const NavbarMobile = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
+  const cartCount = 1; //  cart count;
 
   return (
     <nav className="bg-gray-100 font-Poppins px-8 py-4">
@@ -29,34 +30,25 @@ const NavbarMobile = () => {
 
         {/* Actions */}
         <div className="flex items-center gap-4">
-          {/* depricated search icon */}
-          {/* <button
-            onClick={() => setSearchOpen(!searchOpen)}
-            className="text-black hover:text-gray-600"
-            aria-label="Toggle search bar"
-          >
-            <Search size={20} />
-          </button> */}
+          {/* User Icon */}
           <a href="/login" className="text-black hover:text-gray-600">
             <UserCircle2Icon size={20} />
           </a>
-          <a href="/cart" className="text-black hover:text-gray-600">
-            <ShoppingCart size={20} />
-          </a>
+
+          {/* Cart Icon with Badge */}
+          <div className="relative">
+            <a href="/cart" className="text-black hover:text-gray-600">
+              <ShoppingCart size={20} />
+            </a>
+            {cartCount > 0 && (
+              <span className="absolute -top-2 -right-2 bg-blue-500 text-white text-xs font-semibold rounded-full h-5 w-5 flex items-center justify-center">
+                {cartCount}
+              </span>
+            )}
+          </div>
         </div>
       </div>
-      {/* old stressful nav */}
 
-      {/* Search Bar */}
-      {/* {searchOpen && (
-        <div className="mt-4 flex justify-center">
-          <input
-            type="text"
-            placeholder="Search Product"
-            className="w-full max-w-md px-4 py-2 text-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-400"
-          />
-        </div>
-      )} */}
       {/* Search Bar */}
       <div className="flex items-center border mt-4 border-gray-300 rounded-md overflow-hidden shadow-sm">
         <input
@@ -68,6 +60,7 @@ const NavbarMobile = () => {
           <Search size={18} />
         </button>
       </div>
+
       {/* Mobile Menu */}
       {menuOpen && (
         <ul className="flex flex-col mt-4 bg-gray-100">
