@@ -31,6 +31,11 @@ const NavbarDesktop = () => {
             Contact Us
           </a>
         </li>
+        <li>
+          <a href="/about" className="hover:text-gray-600 text-sm">
+            About Us
+          </a>
+        </li>
       </ul>
 
       {/* Actions */}

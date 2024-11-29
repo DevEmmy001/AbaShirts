@@ -1,16 +1,12 @@
 import React from "react";
-
-const Footer = () => {
-  return (
-    <div
-      className="
-//   universal
-  bg-gray-900 text-white p-8 font-Poppins
-  "
-    >
-      Footer
-    </div>
-  );
+import { useMediaQuery } from "react-responsive";
+import FooterMobile from "./FooterMobile";
+import FooterDesktop from "./FooterDesktop";
+const FooterWrapper = () => {
+  // Define breakpoints
+  const isDesktop = useMediaQuery({ minWidth: 768 });
+  // Breakpoints query
+  return <footer>{isDesktop ? <FooterDesktop /> : <FooterMobile />}</footer>;
 };
 
-export default Footer;
+export default FooterWrapper;

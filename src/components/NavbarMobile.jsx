@@ -4,8 +4,8 @@ import darklogo from "./site-identity/darklogo.png";
 
 const NavbarMobile = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [searchOpen, setSearchOpen] = useState(false);
-  const cartCount = 1; //  cart count;
+  // const [searchOpen, setSearchOpen] = useState(false);
+  const cartCount = 3; //  cart count;
 
   return (
     <nav className="bg-gray-100 font-Poppins px-8 py-4">
@@ -78,6 +78,14 @@ const NavbarMobile = () => {
               className="block rounded-md px-4 text-black py-4 bg-white hover:bg-gray-100 text-sm"
             >
               Contact Us
+            </a>
+          </li>
+          <li className="py-2">
+            <a
+              href="/about"
+              className="block rounded-md px-4 text-black py-4 bg-white hover:bg-gray-100 text-sm"
+            >
+              About Us
             </a>
           </li>
         </ul>

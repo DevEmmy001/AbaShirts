@@ -1,13 +1,12 @@
 import React from "react";
 import Navbar from "../components/Navbarwrapper";
-import Footer from "../components/Footer";
-const Homepage = () => {
+const AboutPage = () => {
   return (
     <>
       <Navbar />
-      <Footer />
+      <p>about page</p>
     </>
   );
 };
 
-export default Homepage;
+export default AboutPage;
