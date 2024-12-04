@@ -14,8 +14,8 @@ const LoginPage = () => {
         {/* intro with logo */}
         <div className="flex flex-col items-center">
           <img src={sitelogo} alt="site logo icon" className="w-1/2 md:w-40" />
-          <h1 className="mt-4 font-bold">Welcome to AbaShirts</h1>
-          <p className="font-medium">Create account</p>
+          <h1 className="mt-4 text-gray-600 font-bold">Welcome to AbaShirts</h1>
+          <p className="text-gray-600 text-sm font-medium">Create account</p>
         </div>
         {/* user forms input for signup */}
         <form className="mt-3 md:w-fit md:flex  ">
