@@ -34,6 +34,10 @@ const LoginPage = () => {
       setError("Full Name is required");
       return;
     }
+    if (!formData.fullName || formData.fullName.length < 6) {
+      setError("Input valid username with characters more than 6!");
+      return;
+    }
     if (!formData.emailOrPhone) {
       setError("Mobile Number or Email is required");
       return;
